@@ -1,0 +1,11 @@
+data/
+output/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.pkl.gz
+*.log
+*.csv
+*.tsv

@@ -1,0 +1,2 @@
+vllm==0.10.0
+graphviz==0.21 # run `sudo apt install graphviz` before using this package

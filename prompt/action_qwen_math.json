@@ -1,0 +1,5 @@
+{
+    "system_prompt" : "You are a helpful assistant for solving math problems.",
+    "question_prefix" : "Solve the following math problem, and give your final anwer within \\boxed{}: \n",
+    "question_suffix" : "Let's do it step by step."
+}
