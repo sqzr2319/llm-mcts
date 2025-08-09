@@ -28,6 +28,9 @@ if __name__ == '__main__':
     # mcts save config
     parser.add_argument("--output_tree_vis", action='store_true', default=False)
     
+    # vllm config
+    parser.add_argument("--gpu_memory_utilization", type=float, default=0.9)
+    
     args = parser.parse_args()
     
     # append time to exp_name

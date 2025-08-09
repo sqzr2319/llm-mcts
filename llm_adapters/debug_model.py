@@ -1,7 +1,7 @@
 from llm_adapters.base_model import BaseLLMModel
 
 class DebugModel(BaseLLMModel):
-    def __init__(self, model_name: str):
+    def __init__(self, model_name: str, *args, **kwargs):
         super().__init__(model_name)
         # Additional initialization if needed
 

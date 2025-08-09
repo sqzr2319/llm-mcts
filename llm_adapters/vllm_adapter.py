@@ -10,7 +10,7 @@ class VLLMAdapter(BaseLLMModel):
             model_name: str,
             **kwargs):
         super().__init__(model_name)
-        self.llm = LLM(model=model_name)
+        self.llm = LLM(model=model_name, **kwargs)
         self.tokenizer:AutoTokenizer = AutoTokenizer.from_pretrained(model_name)
     
     def _encode_message_without_last_gen(self, messages: list[dict]) -> str:
@@ -59,7 +59,7 @@ class VLLMAdapter(BaseLLMModel):
 
 if __name__ == "__main__":
     model_name = "/data/NAS/llm_model_weights/Qwen3-1.7B"
-    adapter = VLLMAdapter(model_name)
+    adapter = VLLMAdapter(model_name, gpu_memory_utilization=0.8)
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "What is the capital of France?"},
