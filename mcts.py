@@ -510,7 +510,9 @@ def _main(configs):
     from search_config import MathConfig
     
     # build base model
-    base_model = get_model_class_by_name(configs.model_type)(configs.model_name_or_path)
+    base_model = get_model_class_by_name(configs.model_type)(
+        configs.model_name_or_path,
+        gpu_memory_utilization=configs.gpu_memory_utilization,)
     print("[MCTS] Base model loaded:", base_model)
     
     # build world model

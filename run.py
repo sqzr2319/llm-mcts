@@ -1,5 +1,7 @@
 import json, os
 from argparse import ArgumentParser
+import sys
+sys.setrecursionlimit(100000)
 
 
 if __name__ == '__main__':
@@ -8,7 +10,7 @@ if __name__ == '__main__':
     parser.add_argument("--entry", type=str, default='mcts', choices=['mcts', 'infer'])
     parser.add_argument("--save_dir", type=str, default='./output')
     parser.add_argument("--exp_name", type=str, default='default_exp')
-    parser.add_argument("--input_file", type=str, default='data/example.jsonl')
+    parser.add_argument("--input_file", type=str, default='data/example.json')
     
     # model config
     parser.add_argument("--model_type", type=str, default='vllm', choices=['vllm', 'debug'])
@@ -27,6 +29,9 @@ if __name__ == '__main__':
     
     # mcts save config
     parser.add_argument("--output_tree_vis", action='store_true', default=False)
+    
+    # vllm config
+    parser.add_argument("--gpu_memory_utilization", type=float, default=0.9)
     
     args = parser.parse_args()
     

@@ -10,11 +10,11 @@ class VLLMAdapter(BaseLLMModel):
             model_name: str,
             **kwargs):
         super().__init__(model_name)
-        self.llm = LLM(model=model_name)
+        self.llm = LLM(model=model_name, **kwargs)
         self.tokenizer:AutoTokenizer = AutoTokenizer.from_pretrained(model_name)
     
     def _encode_message_without_last_gen(self, messages: list[dict]) -> str:
-        text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
+        text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False, enable_thinking=False)
         eos_token = self.tokenizer.eos_token
         index = text.rfind(eos_token)
         if index != -1:
@@ -59,7 +59,7 @@ class VLLMAdapter(BaseLLMModel):
 
 if __name__ == "__main__":
     model_name = "/data/NAS/llm_model_weights/Qwen3-1.7B"
-    adapter = VLLMAdapter(model_name)
+    adapter = VLLMAdapter(model_name, gpu_memory_utilization=0.8)
     messages = [
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user", "content": "What is the capital of France?"},

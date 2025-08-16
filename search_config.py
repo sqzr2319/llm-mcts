@@ -47,17 +47,34 @@ class MathConfig():
             {"role": "user", "content": prompt['question_prefix'] + prompt['question'] + prompt['question_suffix']},
         ]
         return formatted_prompt
-    def _split_response(self, text:str, mode:str = "\n\n") -> list[MathAction]:
-        # 暂时没处理logprob
+    # def _split_response(self, text:str, mode:str = "###") -> list[MathAction]:
+    #     # 暂时没处理logprob
+    #     text = basic_response_filter(text)
+    #     actions = [MathAction(content=action.strip(), logprob=np.array([]), is_end=False) for action in text.split(mode) if action.strip(' \n')]
+    #     actions[-1] = MathAction(content=actions[-1].content, logprob=actions[-1].logprob, is_end=True)  # Mark the last action as end
+    #     if not actions:
+    #         return []
+    #     return actions
+
+    def _split_response(self, text:str) -> list[MathAction]:
+        # 暂时没处理logprob，直接以 "###" 切分
         text = basic_response_filter(text)
-        actions = [MathAction(content=action.strip(), logprob=np.array([]), is_end=False) for action in text.split(mode) if action.strip(' \n')]
-        actions[-1] = MathAction(content=actions[-1].content, logprob=actions[-1].logprob, is_end=True)  # Mark the last action as end
+        parts = [seg.strip() for seg in str(text).split('###') if seg.strip()]
+        if not parts:
+            return []
+        actions = [MathAction(content=seg, logprob=np.array([]), is_end=False) for seg in parts]
+        actions[-1] = MathAction(content=actions[-1].content, logprob=actions[-1].logprob, is_end=True)
         return actions
-    
+
+    # def _full_rollout(self, state:MathState, n_actions:int = None, split_text:str = '###') -> List[List[MathAction]]:
     def _full_rollout(self, state:MathState, n_actions:int = None) -> List[List[MathAction]]:
         prompt_messages = self._format_prompt()
-        prompt_messages.append({"role": "user", "content": state[-1].content if state else ""})
-        
+
+        # 按 "###" 将已有动作重组为历史，并在末尾补一个分隔符以提示继续生成
+        split_text = '###'
+        history = split_text.join([action.content for action in state]) + split_text if state else ""
+        prompt_messages.append({"role": "user", "content": history})
+
         if n_actions is None:
             n_actions = 1
         prompt_messages_list = [prompt_messages]
@@ -76,6 +93,14 @@ class MathConfig():
         return all_action_list
         
 
+    def calculate_reward(self, state: MathState, action: MathAction):
+        return 1.0 if is_equiv(action.content, self.prompt['gt'], verbose=False) else -1.0
+
+    def reward(self, state: MathState, action: MathAction) -> tuple[float, dict]:
+        if action.is_end:
+            return self.calculate_reward(state, action), {}
+        else:
+            return 0.0, {}
     def calculate_reward(self, state: MathState, action: MathAction):
         return 1.0 if is_equiv(action.content, self.prompt['gt'], verbose=False) else -1.0
 
