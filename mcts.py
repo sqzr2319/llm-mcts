@@ -9,6 +9,19 @@ from collections import defaultdict
 
 import numpy as np
 from tqdm import trange
+try:
+    from utils.profiler import profile, patch_methods
+except Exception:
+    # profiling is optional
+    def profile(*args, **kwargs):
+        class _N:
+            def __enter__(self):
+                return self
+            def __exit__(self, *a):
+                return False
+        return _N()
+    def patch_methods(*args, **kwargs):
+        return None
 
 from search_config import MathConfig
 from world_model import MathProblemEnv, MathPromptDict, MathAction, MathState, action_to_json
@@ -219,15 +232,19 @@ class MCTS():
 
     def iterate(self, node: MCTSNode) -> list[MCTSNode]:
         MCTSNode.increment_search_step()
-        return self._iterate_fast_simulate(node) if self.fast_simulate else self._iterate(node)
+        with profile("mcts.iterate", meta={"fast": self.fast_simulate}):
+            return self._iterate_fast_simulate(node) if self.fast_simulate else self._iterate(node)
         
     
     def _iterate_fast_simulate(self, node: MCTSNode) -> list[list[MCTSNode]]:
-        path = self._select(node)
+        with profile("mcts.select"):
+            path = self._select(node)
         print("Selected path: root\n\t" + '\n\t'.join([n.action.content for n in path[1:]]))
         if not self._is_terminal_with_depth_limit(path[-1]):
-            new_path_list = self._fast_simulate(path)
-            cum_reward = self._back_propagate_fast_simulate(path, new_path_list)
+            with profile("mcts.fast_simulate"):
+                new_path_list = self._fast_simulate(path)
+            with profile("mcts.back_propagate_fast"):
+                cum_reward = self._back_propagate_fast_simulate(path, new_path_list)
             
             for new_path in new_path_list:
                 cum_reward = self.cum_reward([node.reward for node in path]+[node.reward for node in new_path])
@@ -241,11 +258,15 @@ class MCTS():
         return path
     
     def _iterate(self, node: MCTSNode) -> list[MCTSNode]:
-        path = self._select(node)
+        with profile("mcts.select"):
+            path = self._select(node)
         if not self._is_terminal_with_depth_limit(path[-1]):
-            self._expand(path[-1])
-            self._simulate(path)
-        cum_reward = self._back_propagate(path)
+            with profile("mcts.expand"):
+                self._expand(path[-1])
+            with profile("mcts.simulate"):
+                self._simulate(path)
+        with profile("mcts.back_propagate"):
+            cum_reward = self._back_propagate(path)
         if self.output_strategy == 'max_iter' and path[-1].is_terminal and cum_reward > self._output_cum_reward:
             self._output_cum_reward = cum_reward
             self._output_iter = path
@@ -414,12 +435,14 @@ class MCTS():
     def search(self):
         self._output_cum_reward = -math.inf
         self._output_iter = None
-        self.root = MCTSNode(state=self.world_model.init_state(), action=None, parent=None, calc_q=self.calc_q)
+        with profile("world.init_state"):
+            self.root = MCTSNode(state=self.world_model.init_state(), action=None, parent=None, calc_q=self.calc_q)
         if self.output_trace_in_each_iter:
             self.trace_in_each_iter = []
 
-        for _ in trange(self.n_iters, disable=self.disable_tqdm, desc='MCTS iteration', leave=False):
-            path = self.iterate(self.root)
+        for i in trange(self.n_iters, disable=self.disable_tqdm, desc='MCTS iteration', leave=False):
+            with profile("mcts.iteration", meta={"iter": i}):
+                path = self.iterate(self.root)
             if self.output_trace_in_each_iter:
                 self.trace_in_each_iter.append(deepcopy(path))
 
@@ -510,13 +533,15 @@ def _main(configs):
     from search_config import MathConfig
     
     # build base model
-    base_model = get_model_class_by_name(configs.model_type)(
-        configs.model_name_or_path,
-        gpu_memory_utilization=configs.gpu_memory_utilization,)
+    with profile("load.base_model", meta={"type": configs.model_type}):
+        base_model = get_model_class_by_name(configs.model_type)(
+            configs.model_name_or_path,
+            gpu_memory_utilization=configs.gpu_memory_utilization,)
     print("[MCTS] Base model loaded:", base_model)
     
     # build world model
-    world_model = MathProblemEnv()
+    with profile("build.world_model"):
+        world_model = MathProblemEnv()
     print("[MCTS] World model built:", world_model)
     
     # build search config
@@ -527,27 +552,30 @@ def _main(configs):
     #     question_suffix="Let's solve it step by step.",
     #     gt='1118'
     # )
-    search_config = MathConfig(
-        base_model=base_model,
-        n_actions=configs.n_actions,
-    )
+    with profile("build.search_config"):
+        search_config = MathConfig(
+            base_model=base_model,
+            n_actions=configs.n_actions,
+        )
     # search_config.update_example(prompt=prompt)
     print("[MCTS] Search config built:", search_config)
     
     print("[MCTS] Start to load input prompts from:", configs.input_file)
-    if configs.input_file.endswith('.jsonl'):
-        with open(configs.input_file, 'r') as f:
-            prompts = [json.loads(line) for line in f]
-    elif configs.input_file.endswith('.json'):
-        with open(configs.input_file, 'r') as f:
-            prompts = json.load(f)
+    with profile("load.prompts", meta={"path": configs.input_file}):
+        if configs.input_file.endswith('.jsonl'):
+            with open(configs.input_file, 'r') as f:
+                prompts = [json.loads(line) for line in f]
+        elif configs.input_file.endswith('.json'):
+            with open(configs.input_file, 'r') as f:
+                prompts = json.load(f)
     print("[MCTS] Input prompts loaded, total len:", len(prompts))
     
     action_prompt_config = None
     if configs.action_prompt_config:
         print("[MCTS] Load action prompt config from:", configs.action_prompt_config)
-        with open(configs.action_prompt_config, 'r') as f:
-            action_prompt_config = json.load(f)
+        with profile("load.action_prompt_config", meta={"path": configs.action_prompt_config}):
+            with open(configs.action_prompt_config, 'r') as f:
+                action_prompt_config = json.load(f)
         print("[MCTS] Action prompt config loaded:", action_prompt_config)
     assert action_prompt_config is not None
     
@@ -567,7 +595,8 @@ def _main(configs):
             question_suffix=prompt.get('question_suffix', action_prompt_config["question_suffix"]),
             gt=prompt.get('gt', None)
         )
-        search_config.update_example(prompt=prompt)
+        with profile("search_config.update_example"):
+            search_config.update_example(prompt=prompt)
     
         # build MCTS
         mcts = MCTS(
@@ -578,9 +607,19 @@ def _main(configs):
             cum_reward=parse_cum_reward(configs.cum_reward),
             calc_q=parse_calc_q(configs.calc_q),
         )
-        
+
         print("[MCTS] MCTS start searching...")
-        results = mcts(world_model=world_model, search_config=search_config)
+        # Patch base_model.generate to measure LLM latency per call
+        try:
+            from llm_adapters.base_model import BaseLLMModel
+            patch_methods([
+                (BaseLLMModel, "generate", "llm.generate"),
+                (type(search_config.base_model), "generate", "llm.generate.concrete"),
+            ])
+        except Exception:
+            pass
+        with profile("mcts.call", meta={"prompt_index": prompt_index}):
+            results = mcts(world_model=world_model, search_config=search_config)
         infer_time = time.time() - start_time
         print("[MCTS] MCTS search finished, time taken:", infer_time, "seconds")
         max_reward, max_path = mcts._dfs_max_reward([mcts.root])

@@ -1,4 +1,11 @@
-data/
+# Profiling outputs
+timings.jsonl
+timings.summary.json
+timings.summary.csv
+output/**/timings.jsonl
+output/**/timings.summary.json
+output/**/timings.summary.csv
+output/**/code_backup/
 output/
 __pycache__/
 *.pyc
@@ -9,3 +16,4 @@ __pycache__/
 *.log
 *.csv
 *.tsv
+model/

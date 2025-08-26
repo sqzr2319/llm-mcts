@@ -14,7 +14,7 @@ class VLLMAdapter(BaseLLMModel):
         self.tokenizer:AutoTokenizer = AutoTokenizer.from_pretrained(model_name)
     
     def _encode_message_without_last_gen(self, messages: list[dict]) -> str:
-        text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False)
+        text = self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=False, enable_thinking=False)
         eos_token = self.tokenizer.eos_token
         index = text.rfind(eos_token)
         if index != -1:

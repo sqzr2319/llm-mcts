@@ -150,8 +150,23 @@ def is_equiv(str1, str2, verbose=False):
         return True
     if str1 is None or str2 is None:
         return False
-    str1 = capture_boxed_format(str1)
-    str2 = capture_boxed_format(str2)
+        import re
+        # 去除空格
+        ans1 = str(ans1).replace(' ', '')
+        ans2 = str(ans2).replace(' ', '')
+        # 统一负号
+        ans1 = ans1.replace('−', '-')
+        ans2 = ans2.replace('−', '-')
+        # 统一分数写法（\dfrac、\frac、\\frac等）
+        def normalize_frac(s):
+            # 支持 -\frac{2}{3}、-\dfrac{2}{3}、-\\frac{2}{3} 等
+            s = re.sub(r'-?\\dfrac', r'-\\frac', s)
+            s = re.sub(r'-?\\frac', r'-\\frac', s)
+            s = re.sub(r'-?\frac', r'-\\frac', s)
+            return s
+        ans1 = normalize_frac(ans1)
+        ans2 = normalize_frac(ans2)
+        return ans1 == ans2
     try:
         ss1 = _strip_string(str1)
         ss2 = _strip_string(str2)

@@ -1,5 +1,7 @@
 import json, os
 from argparse import ArgumentParser
+import sys
+sys.setrecursionlimit(100000)
 
 
 if __name__ == '__main__':
@@ -8,7 +10,7 @@ if __name__ == '__main__':
     parser.add_argument("--entry", type=str, default='mcts', choices=['mcts', 'infer'])
     parser.add_argument("--save_dir", type=str, default='./output')
     parser.add_argument("--exp_name", type=str, default='default_exp')
-    parser.add_argument("--input_file", type=str, default='data/example.jsonl')
+    parser.add_argument("--input_file", type=str, default='data/example.json')
     
     # model config
     parser.add_argument("--model_type", type=str, default='vllm', choices=['vllm', 'debug'])
@@ -30,6 +32,10 @@ if __name__ == '__main__':
     
     # vllm config
     parser.add_argument("--gpu_memory_utilization", type=float, default=0.9)
+
+    # profiling config
+    parser.add_argument("--profile", action='store_true', default=False,
+                        help="Enable lightweight runtime profiling and write timings to save_dir/timings.jsonl")
     
     args = parser.parse_args()
     
@@ -50,8 +56,19 @@ if __name__ == '__main__':
     
     
     if args.entry == 'mcts':
+        # optional profiling setup
+        if args.profile:
+            from utils.profiler import enable, profile
+            timing_path = os.path.join(args.save_dir, "timings.jsonl")
+            os.environ["MCTS_PROFILE_FILE"] = timing_path
+            enable(timing_path)
         from mcts import _main
-        _main(args)
+        if args.profile:
+            from utils.profiler import profile
+            with profile("entry._main", meta={"entry": args.entry}):
+                _main(args)
+        else:
+            _main(args)
     else:
         raise NotImplementedError(f"Entry point '{args.entry}' is not implemented.")
     

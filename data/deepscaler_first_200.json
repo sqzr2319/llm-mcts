@@ -1,0 +1,802 @@
+[
+  {
+    "question": "The operation $\\otimes$ is defined for all nonzero numbers by $a \\otimes b = \\frac{a^{2}}{b}$. Determine $[(1 \\otimes 2) \\otimes 3] - [1 \\otimes (2 \\otimes 3)]$.",
+    "gt": "-\\frac{2}{3}"
+  },
+  {
+    "question": "Doug constructs a square window using $8$ equal-size panes of glass. The ratio of the height to width for each pane is $5 : 2$, and the borders around and between the panes are $2$ inches wide. In inches, what is the side length of the square window?",
+    "gt": "26"
+  },
+  {
+    "question": "Let $P(x)$ be a polynomial of degree $3n$ such that\n\\begin{align*} P(0) = P(3) = \\dots = P(3n) &= 2, \\\\ P(1) = P(4) = \\dots = P(3n+1-2) &= 1, \\\\ P(2) = P(5) = \\dots = P(3n+2-2) &= 0. \\end{align*}\nAlso, $P(3n+1) = 730$. Determine $n$.",
+    "gt": "1"
+  },
+  {
+    "question": "Let $f$ be the function defined by $f(x)=ax^2-\\sqrt{2}$ for some positive $a$. If $f(f(\\sqrt{2}))=-\\sqrt{2}$ then $a=$",
+    "gt": "\\frac{\\sqrt{2}}{2}"
+  },
+  {
+    "question": "At Euclid Middle School the mathematics teachers are Mrs. Germain, Mr. Newton, and Mrs. Young. There are $11$ students in Mrs. Germain's class, $8$ students in Mr. Newton's class, and $9$ students in Mrs. Young's class taking the AMC $8$ this year. How many mathematics students at Euclid Middle School are taking the contest?",
+    "gt": "28"
+  },
+  {
+    "question": "If $991+993+995+997+999=5000-N$, then $N=$",
+    "gt": "25"
+  },
+  {
+    "question": "The total in-store price for an appliance is $99.99$. A television commercial advertises the same product for three easy payments of $29.98$ and a one-time shipping and handling charge of $9.98$. How many cents are saved by buying the appliance from the television advertiser?",
+    "gt": "7"
+  },
+  {
+    "question": "Points $A,B,C,D,E$ and $F$ lie, in that order, on $\\overline{AF}$, dividing it into five segments, each of length 1. Point $G$ is not on line $AF$. Point $H$ lies on $\\overline{GD}$, and point $J$ lies on $\\overline{GF}$. The line segments $\\overline{HC}, \\overline{JE},$ and $\\overline{AG}$ are parallel. Find $HC/JE$.",
+    "gt": "\\frac{5}{3}"
+  },
+  {
+    "question": "During the softball season, Judy had $35$ hits.  Among her hits were $1$ home run, $1$ triple and $5$ doubles.  The rest of her hits were single.  What percent of her hits were single?",
+    "gt": "80\\%"
+  },
+  {
+    "question": "The graph, $G$ of $y=\\log_{10}x$ is rotated $90^{\\circ}$ counter-clockwise about the origin to obtain a new graph $G'$. What is the equation for $G'$?",
+    "gt": "10^{-x}"
+  },
+  {
+    "question": "A set of consecutive positive integers beginning with $1$ is written on a blackboard. One number is erased. The average (arithmetic mean) of the remaining numbers is $35\\frac{7}{17}$. What number was erased?",
+    "gt": "7"
+  },
+  {
+    "question": "A rectangular yard contains two flower beds in the shape of congruent isosceles right triangles. The remainder of the yard has a trapezoidal shape, as shown. The parallel sides of the trapezoid have lengths $15$ and $25$ meters. What fraction of the yard is occupied by the flower beds?\n\n[asy]\nunitsize(2mm); defaultpen(linewidth(.8pt));\nfill((0,0)--(0,5)--(5,5)--cycle,gray);\nfill((25,0)--(25,5)--(20,5)--cycle,gray);\ndraw((0,0)--(0,5)--(25,5)--(25,0)--cycle);\ndraw((0,0)--(5,5));\ndraw((20,5)--(25,0));\n[/asy]",
+    "gt": "\\frac{1}{5}"
+  },
+  {
+    "question": "What is the sum of all possible values of $t$ between $0$ and $360$ such that the triangle in the coordinate plane whose vertices are $(\\cos 40^\\circ,\\sin 40^\\circ)$, $(\\cos 60^\\circ,\\sin 60^\\circ)$, and $(\\cos t^\\circ,\\sin t^\\circ)$ is isosceles?",
+    "gt": "380"
+  },
+  {
+    "question": "In the adjoining figure, points $B$ and $C$ lie on line segment $AD$, and $AB, BC$, and $CD$ are diameters of circle $O, N$, and $P$, respectively. Circles $O, N$, and $P$ all have radius $15$ and the line $AG$ is tangent to circle $P$ at $G$. If $AG$ intersects circle $N$ at points $E$ and $F$, then chord $EF$ has length",
+    "gt": "20"
+  },
+  {
+    "question": "The first three terms of an arithmetic progression are $x - 1, x + 1, 2x + 3$, in the order shown. The value of $x$ is:",
+    "gt": "0"
+  },
+  {
+    "question": "Alicia had two containers. The first was $\\frac{5}{6}$ full of water and the second was empty. She poured all the water from the first container into the second container, at which point the second container was $\\frac{3}{4}$ full of water. What is the ratio of the volume of the first container to the volume of the second container?",
+    "gt": "\\frac{9}{10}"
+  },
+  {
+    "question": "An architect is building a structure that will place vertical pillars at the vertices of regular hexagon $ABCDEF$, which is lying horizontally on the ground. The six pillars will hold up a flat solar panel that will not be parallel to the ground. The heights of pillars at $A$, $B$, and $C$ are $12$, $9$, and $10$ meters, respectively. What is the height, in meters, of the pillar at $E$?",
+    "gt": "17"
+  },
+  {
+    "question": "The points $(2,-3)$, $(4,3)$, and $(5, k/2)$ are on the same straight line. The value(s) of $k$ is (are):",
+    "gt": "12"
+  },
+  {
+    "question": "In a certain year the price of gasoline rose by $20\\%$ during January, fell by $20\\%$ during February, rose by $25\\%$ during March, and fell by $x\\%$ during April. The price of gasoline at the end of April was the same as it had been at the beginning of January. To the nearest integer, what is $x$",
+    "gt": "17"
+  },
+  {
+    "question": "Quadrilateral $ABCD$ satisfies $\\angle ABC = \\angle ACD = 90^{\\circ}, AC=20,$ and $CD=30.$ Diagonals $\\overline{AC}$ and $\\overline{BD}$ intersect at point $E,$ and $AE=5.$ What is the area of quadrilateral $ABCD?$",
+    "gt": "360"
+  },
+  {
+    "question": "The angle bisector of the acute angle formed at the origin by the graphs of the lines $y = x$ and $y=3x$ has equation $y=kx.$ What is $k?$",
+    "gt": "\\frac{1+\\sqrt{5}}{2}"
+  },
+  {
+    "question": "A set $S$ of points in the $xy$-plane is symmetric about the origin, both coordinate axes, and the line $y=x$. If $(2,3)$ is in $S$, what is the smallest number of points in $S$?",
+    "gt": "8"
+  },
+  {
+    "question": "Five positive consecutive integers starting with $a$ have average $b$. What is the average of $5$ consecutive integers that start with $b$?",
+    "gt": "$a+4$"
+  },
+  {
+    "question": "At noon on a certain day, Minneapolis is $N$ degrees warmer than St. Louis. At $4{:}00$ the temperature in Minneapolis has fallen by $5$ degrees while the temperature in St. Louis has risen by $3$ degrees, at which time the temperatures in the two cities differ by $2$ degrees. What is the product of all possible values of $N?$",
+    "gt": "60"
+  },
+  {
+    "question": "Consider all 1000-element subsets of the set $\\{1, 2, 3, \\dots , 2015\\}$.  From each such subset choose the least element.  The arithmetic mean of all of these least elements is $\\frac{p}{q}$, where $p$ and $q$ are relatively prime positive integers.  Find $p + q$.",
+    "gt": "2016"
+  },
+  {
+    "question": "A man on his way to dinner shortly after $6:00$ p.m. observes that the hands of his watch form an angle of $110^{\\circ}$. Returning before $7:00$ p.m. he notices that again the hands of his watch form an angle of $110^{\\circ}$. The number of minutes that he has been away is:",
+    "gt": "40"
+  },
+  {
+    "question": "A 3x3x3 cube is made of $27$ normal dice. Each die's opposite sides sum to $7$. What is the smallest possible sum of all of the values visible on the $6$ faces of the large cube?",
+    "gt": "90"
+  },
+  {
+    "question": "In the multiplication problem below $A$, $B$, $C$, $D$ are different digits. What is $A+B$?\n$\\begin{array}{cccc} & A & B & A\\\\ \\times & & C & D\\\\ \\hline C & D & C & D\\\\ \\end{array}$",
+    "gt": "1"
+  },
+  {
+    "question": "Andrea and Lauren are $20$ kilometers apart. They bike toward one another with Andrea traveling three times as fast as Lauren, and the distance between them decreasing at a rate of $1$ kilometer per minute. After $5$ minutes, Andrea stops biking because of a flat tire and waits for Lauren. After how many minutes from the time they started to bike does Lauren reach Andrea?",
+    "gt": "65"
+  },
+  {
+    "question": "The sum of two natural numbers is $17402$. One of the two numbers is divisible by $10$. If the units digit of that number is erased, the other number is obtained. What is the difference of these two numbers?",
+    "gt": "14238"
+  },
+  {
+    "question": "What is the value of $2^{0^{1^9}} + (2^0)^{1^9}$?",
+    "gt": "2"
+  },
+  {
+    "question": "If $a$ and $b$ are digits for which\n$\\begin{array}{ccc}& 2 & a\\ \\times & b & 3\\ \\hline & 6 & 9\\ 9 & 2 & \\ \\hline 9 & 8 & 9\\end{array}$\nthen $a+b =$",
+    "gt": "7"
+  },
+  {
+    "question": "If $x, 2x+2, 3x+3, \\dots$ are in geometric progression, the fourth term is:",
+    "gt": "-13\\frac{1}{2}"
+  },
+  {
+    "question": "At $2:15$ o'clock, the hour and minute hands of a clock form an angle of:",
+    "gt": "22\\frac {1}{2}^{\\circ}"
+  },
+  {
+    "question": "A finite sequence of three-digit integers has the property that the tens and units digits of each term are, respectively, the hundreds and tens digits of the next term, and the tens and units digits of the last term are, respectively, the hundreds and tens digits of the first term. For example, such a sequence might begin with the terms 247, 475, and 756 and end with the term 824. Let $S$ be the sum of all the terms in the sequence. What is the largest prime factor that always divides $S$?",
+    "gt": "37"
+  },
+  {
+    "question": "Square $EFGH$ has one vertex on each side of square $ABCD$. Point $E$ is on $AB$ with $AE=7\\cdot EB$. What is the ratio of the area of $EFGH$ to the area of $ABCD$?",
+    "gt": "\\frac{25}{32}"
+  },
+  {
+    "question": "Chandler wants to buy a $500$ dollar mountain bike. For his birthday, his grandparents send him $50$ dollars, his aunt sends him $35$ dollars and his cousin gives him $15$ dollars. He earns $16$ dollars per week for his paper route. He will use all of his birthday money and all of the money he earns from his paper route. In how many weeks will he be able to buy the mountain bike?",
+    "gt": "25"
+  },
+  {
+    "question": "The harmonic mean of a set of non-zero numbers is the reciprocal of the average of the reciprocals of the numbers. What is the harmonic mean of 1, 2, and 4?",
+    "gt": "\\frac{12}{7}"
+  },
+  {
+    "question": "Julie is preparing a speech for her class.  Her speech must last between one-half hour and three-quarters of an hour.  The ideal rate of speech is 150 words per minute.  If Julie speaks at the ideal rate, what number of words would be an appropriate length for her speech?",
+    "gt": "5650"
+  },
+  {
+    "question": "Let $ABC$ be an equilateral triangle. Extend side $\\overline{AB}$ beyond $B$ to a point $B'$ so that $BB'=3 \\cdot AB$. Similarly, extend side $\\overline{BC}$ beyond $C$ to a point $C'$ so that $CC'=3 \\cdot BC$, and extend side $\\overline{CA}$ beyond $A$ to a point $A'$ so that $AA'=3 \\cdot CA$. What is the ratio of the area of $\\triangle A'B'C'$ to the area of $\\triangle ABC$?",
+    "gt": "16"
+  },
+  {
+    "question": "If the following instructions are carried out by a computer, what value of \\(X\\) will be printed because of instruction \\(5\\)?\n\n1. START \\(X\\) AT \\(3\\) AND \\(S\\) AT \\(0\\).  \n2. INCREASE THE VALUE OF \\(X\\) BY \\(2\\).   \n3. INCREASE THE VALUE OF \\(S\\) BY THE VALUE OF \\(X\\). \n4. IF \\(S\\) IS AT LEAST \\(10000\\),   \n       THEN GO TO INSTRUCTION \\(5\\);  \n       OTHERWISE, GO TO INSTRUCTION \\(2\\).  \n       AND PROCEED FROM THERE.  \n5. PRINT THE VALUE OF \\(X\\).  \n6. STOP.",
+    "gt": "23"
+  },
+  {
+    "question": "Letters $A, B, C,$ and $D$ represent four different digits selected from $0, 1, 2, \\ldots ,9.$ If $(A+B)/(C+D)$ is an integer that is as large as possible, what is the value of $A+B$?",
+    "gt": "17"
+  },
+  {
+    "question": "A shopper plans to purchase an item that has a listed price greater than $\\$100$ and can use any one of the three coupons. Coupon A gives $15\\%$ off the listed price, Coupon B gives $\\$30$ off the listed price, and Coupon C gives $25\\%$ off the amount by which the listed price exceeds\n$\\$100$. \nLet $x$ and $y$ be the smallest and largest prices, respectively, for which Coupon A saves at least as many dollars as Coupon B or C. What is $y - x$?",
+    "gt": "50"
+  },
+  {
+    "question": "In $\\triangle ABC$, $\\angle ABC=45^\\circ$. Point $D$ is on $\\overline{BC}$ so that $2 \\cdot BD=CD$ and $\\angle DAB=15^\\circ$. Find $\\angle ACB.$",
+    "gt": "75^\\circ"
+  },
+  {
+    "question": "Mary's top book shelf holds five books with the following widths, in centimeters: $6$, $\\dfrac{1}{2}$, $1$, $2.5$, and $10$. What is the average book width, in centimeters?",
+    "gt": "4"
+  },
+  {
+    "question": "The sum of the greatest integer less than or equal to $x$ and the least integer greater than or equal to $x$ is $5$. The solution set for $x$ is",
+    "gt": "\\{x \\mid 2 < x < 3\\}"
+  },
+  {
+    "question": "A powderman set a fuse for a blast to take place in $30$ seconds. He ran away at a rate of $8$ yards per second. Sound travels at the rate of $1080$ feet per second. When the powderman heard the blast, he had run approximately:",
+    "gt": "245 yd."
+  },
+  {
+    "question": "A student council must select a two-person welcoming committee and a three-person planning committee from among its members. There are exactly $10$ ways to select a two-person team for the welcoming committee. It is possible for students to serve on both committees. In how many different ways can a three-person planning committee be selected?",
+    "gt": "10"
+  },
+  {
+    "question": "Two years ago Pete was three times as old as his cousin Claire. Two years before that, Pete was four times as old as Claire. In how many years will the ratio of their ages be $2$ : $1$ ?",
+    "gt": "4"
+  },
+  {
+    "question": "A square piece of paper, 4 inches on a side, is folded in half vertically. Both layers are then cut in half parallel to the fold. Three new rectangles are formed, a large one and two small ones. What is the ratio of the perimeter of one of the small rectangles to the perimeter of the large rectangle?",
+    "gt": "\\frac{5}{6}"
+  },
+  {
+    "question": "Positive integers $a$ and $b$ are such that the graphs of $y=ax+5$ and $y=3x+b$ intersect the $x$-axis at the same point. What is the sum of all possible $x$-coordinates of these points of intersection?",
+    "gt": "-8"
+  },
+  {
+    "question": "Four circles, no two of which are congruent, have centers at $A$, $B$, $C$, and $D$, and points $P$ and $Q$ lie on all four circles. The radius of circle $A$ is $\\frac{5}{8}$ times the radius of circle $B$, and the radius of circle $C$ is $\\frac{5}{8}$ times the radius of circle $D$. Furthermore, $AB = CD = 39$ and $PQ = 48$. Let $R$ be the midpoint of $\\overline{PQ}$. What is $AR+BR+CR+DR$?",
+    "gt": "192"
+  },
+  {
+    "question": "Medians $AD$ and $CE$ of $\\triangle ABC$ intersect in $M$. The midpoint of $AE$ is $N$. \nLet the area of $\\triangle MNE$ be $k$ times the area of $\\triangle ABC$. Then $k$ equals:",
+    "gt": "\\frac{1}{6}"
+  },
+  {
+    "question": "Find the minimum value of $\\sqrt{x^2+y^2}$ if $5x+12y=60$.",
+    "gt": "\\frac{60}{13}"
+  },
+  {
+    "question": "On average, for every 4 sports cars sold at the local dealership, 7 sedans are sold. The dealership predicts that it will sell 28 sports cars next month. How many sedans does it expect to sell?",
+    "gt": "49"
+  },
+  {
+    "question": "Two fair dice, each with at least $6$ faces are rolled. On each face of each die is printed a distinct integer from $1$ to the number of faces on that die, inclusive. The probability of rolling a sum of $7$ is $\\frac34$ of the probability of rolling a sum of $10,$ and the probability of rolling a sum of $12$ is $\\frac{1}{12}$. What is the least possible number of faces on the two dice combined?",
+    "gt": "17"
+  },
+  {
+    "question": "Two long cylindrical tubes of the same length but different diameters lie parallel to each other on a flat surface. The larger tube has radius $72$ and rolls along the surface toward the smaller tube, which has radius $24$. It rolls over the smaller tube and continues rolling along the flat surface until it comes to rest on the same point of its circumference as it started, having made one complete revolution. If the smaller tube never moves, and the rolling occurs with no slipping, the larger tube ends up a distance $x$ from where it starts. The distance $x$ can be expressed in the form $a\\pi+b\\sqrt{c},$ where $a,$ $b,$ and $c$ are integers and $c$ is not divisible by the square of any prime. Find $a+b+c.$",
+    "gt": "312"
+  },
+  {
+    "question": "The number $2.5252525\\ldots$ can be written as a fraction.\nWhen reduced to lowest terms the sum of the numerator and denominator of this fraction is:",
+    "gt": "349"
+  },
+  {
+    "question": "For all non-zero numbers $x$ and $y$ such that $x = 1/y$, $\\left(x-\\frac{1}{x}\\right)\\left(y+\\frac{1}{y}\\right)$ equals",
+    "gt": "x^2-y^2"
+  },
+  {
+    "question": "The values of $k$ for which the equation $2x^2-kx+x+8=0$ will have real and equal roots are:",
+    "gt": "9 and -7"
+  },
+  {
+    "question": "How many perfect cubes lie between $2^8+1$ and $2^{18}+1$, inclusive?",
+    "gt": "58"
+  },
+  {
+    "question": "A line that passes through the origin intersects both the line $x = 1$ and the line $y=1+ \\frac{\\sqrt{3}}{3} x$. The three lines create an equilateral triangle. What is the perimeter of the triangle?",
+    "gt": "3 + 2\\sqrt{3}"
+  },
+  {
+    "question": "Alicia earns 20 dollars per hour, of which $1.45\\%$ is deducted to pay local taxes.  How many cents per hour of Alicia's wages are used to pay local taxes?",
+    "gt": "29"
+  },
+  {
+    "question": "How many positive factors of 36 are also multiples of 4?",
+    "gt": "3"
+  },
+  {
+    "question": "The numbers $-2, 4, 6, 9$ and $12$ are rearranged according to these rules:\n\n        1. The largest isn't first, but it is in one of the first three places. \n        2. The smallest isn't last, but it is in one of the last three places. \n        3. The median isn't first or last.\n\nWhat is the average of the first and last numbers?",
+    "gt": "6.5"
+  },
+  {
+    "question": "The circumference of the circle with center $O$ is divided into $12$ equal arcs, marked the letters $A$ through $L$ as seen below. What is the number of degrees in the sum of the angles $x$ and $y$?",
+    "gt": "90"
+  },
+  {
+    "question": "Mary thought of a positive two-digit number. She multiplied it by $3$ and added $11$. Then she switched the digits of the result, obtaining a number between $71$ and $75$, inclusive. What was Mary's number?",
+    "gt": "12"
+  },
+  {
+    "question": "Trapezoid $ABCD$ has $\\overline{AB} \\parallel \\overline{CD}, BC=CD=43$, and $\\overline{AD} \\perp \\overline{BD}$. Let $O$ be the intersection of the diagonals $\\overline{AC}$ and $\\overline{BD}$, and let $P$ be the midpoint of $\\overline{BD}$. Given that $OP=11$, the length of $AD$ can be written in the form $m\\sqrt{n}$, where $m$ and $n$ are positive integers and $n$ is not divisible by the square of any prime. What is $m+n$?",
+    "gt": "194"
+  },
+  {
+    "question": "If $q_1(x)$ and $r_1$ are the quotient and remainder, respectively, when the polynomial $x^8$ is divided by $x + \\frac{1}{2}$, and if $q_2(x)$ and $r_2$ are the quotient and remainder, respectively, when $q_1(x)$ is divided by $x + \\frac{1}{2}$, then $r_2$ equals",
+    "gt": "-\\frac{1}{16}"
+  },
+  {
+    "question": "The expression $\\frac{1^{4y-1}}{5^{-1}+3^{-1}}$ is equal to:",
+    "gt": "\\frac{15}{8}"
+  },
+  {
+    "question": "Carrie has a rectangular garden that measures $6$ feet by $8$ feet. She plants the entire garden with strawberry plants. Carrie is able to plant $4$ strawberry plants per square foot, and she harvests an average of $10$ strawberries per plant. How many strawberries can she expect to harvest?",
+    "gt": "1920"
+  },
+  {
+    "question": "The sides of a triangle have lengths $6.5$, $10$, and $s$, where $s$ is a whole number. What is the smallest possible value of $s$?",
+    "gt": "4"
+  },
+  {
+    "question": "In the cube $ABCDEFGH$ with opposite vertices $C$ and $E,$ $J$ and $I$ are the midpoints of segments $\\overline{FB}$ and $\\overline{HD},$ respectively. Let $R$ be the ratio of the area of the cross-section $EJCI$ to the area of one of the faces of the cube. What is $R^2?$",
+    "gt": "\\frac{9}{4}"
+  },
+  {
+    "question": "A square and an equilateral triangle have the same perimeter. Let $A$ be the area of the circle circumscribed about the square and $B$ the area of the circle circumscribed around the triangle. Find $A/B$.",
+    "gt": "\\frac{27}{32}"
+  },
+  {
+    "question": "Quadrilateral $ABCD$ has $AB = BC = CD$, $m\\angle ABC = 70^\\circ$ and $m\\angle BCD = 170^\\circ$. What is the degree measure of $\\angle BAD$?",
+    "gt": "85"
+  },
+  {
+    "question": "Let $(a_n)$ and $(b_n)$ be the sequences of real numbers such that\n\\[ (2 + i)^n = a_n + b_ni \\]for all integers $n\\geq 0$, where $i = \\sqrt{-1}$. What is\n\\[\\sum_{n=0}^\\infty\\frac{a_nb_n}{7^n}\\,?\\]",
+    "gt": "\\frac{7}{16}"
+  },
+  {
+    "question": "An $11 \\times 11 \\times 11$ wooden cube is formed by gluing together $11^3$ unit cubes. What is the greatest number of unit cubes that can be seen from a single point?",
+    "gt": "331"
+  },
+  {
+    "question": "If each of two intersecting lines intersects a hyperbola and neither line is tangent to the hyperbola, then the possible number of points of intersection with the hyperbola is:",
+    "gt": "2, 3, or 4"
+  },
+  {
+    "question": "The Fort Worth Zoo has a number of two-legged birds and a number of four-legged mammals. On one visit to the zoo, Margie counted 200 heads and 522 legs. How many of the animals that Margie counted were two-legged birds?",
+    "gt": "139"
+  },
+  {
+    "question": "If $\\frac{1}{x} - \\frac{1}{y} = \\frac{1}{z}$, then $z$ equals:",
+    "gt": "\\frac{xy}{y - x}"
+  },
+  {
+    "question": "A rectangular floor measures $a$ by $b$ feet, where $a$ and $b$ are positive integers with $b > a$. An artist paints a rectangle on the floor with the sides of the rectangle parallel to the sides of the floor. The unpainted part of the floor forms a border of width $1$ foot around the painted rectangle and occupies half of the area of the entire floor. How many possibilities are there for the ordered pair $(a,b)$?",
+    "gt": "2"
+  },
+  {
+    "question": "Ashley, Betty, Carlos, Dick, and Elgin went shopping. Each had a whole number of dollars to spend, and together they had $56$ dollars. The absolute difference between the amounts Ashley and Betty had to spend was $19$ dollars. The absolute difference between the amounts Betty and Carlos had was $7$ dollars, between Carlos and Dick was $5$ dollars, between Dick and Elgin was $4$ dollars, and between Elgin and Ashley was $11$ dollars. How many dollars did Elgin have?",
+    "gt": "10"
+  },
+  {
+    "question": "A palindrome between $1000$ and $10000$ is chosen at random. What is the probability that it is divisible by $7$?",
+    "gt": "\\frac{1}{5}"
+  },
+  {
+    "question": "What is the greatest three-digit positive integer $n$ for which the sum of the first $n$ positive integers is not a divisor of the product of the first $n$ positive integers?",
+    "gt": "996"
+  },
+  {
+    "question": "In  $\\triangle ABC$ with right angle at $C$, altitude $CH$ and median $CM$ trisect the right angle. If the area of $\\triangle CHM$ is $K$, then the area of $\\triangle ABC$ is",
+    "gt": "4K"
+  },
+  {
+    "question": "Claire adds the degree measures of the interior angles of a convex polygon and arrives at a sum of $2017$. She then discovers that she forgot to include one angle. What is the degree measure of the forgotten angle?",
+    "gt": "143"
+  },
+  {
+    "question": "Zara has a collection of $4$ marbles: an Aggie, a Bumblebee, a Steelie, and a Tiger. She wants to display them in a row on a shelf, but does not want to put the Steelie and the Tiger next to one another. In how many ways can she do this?",
+    "gt": "12"
+  },
+  {
+    "question": "Triangle $ABC$ has vertices $A = (3,0)$, $B = (0,3)$, and $C$, where $C$ is on the line $x + y = 7$. What is the area of $\\triangle ABC$?",
+    "gt": "6"
+  },
+  {
+    "question": "Everyday at school, Jo climbs a flight of $6$ stairs. Jo can take the stairs $1$, $2$, or $3$ at a time. For example, Jo could climb $3$, then $1$, then $2$. In how many ways can Jo climb the stairs?",
+    "gt": "24"
+  },
+  {
+    "question": "A team won $40$ of its first $50$ games.  How many of the remaining $40$ games must this team win so it will have won exactly $70 \\%$ of its games for the season?",
+    "gt": "23"
+  },
+  {
+    "question": "In this diagram, not drawn to scale, Figures $I$ and $III$ are equilateral triangular regions with respective areas of $32\\sqrt{3}$ and $8\\sqrt{3}$ square inches. Figure $II$ is a square region with area $32$ square inches. Let the length of segment $AD$ be decreased by $12\\frac{1}{2}$% of itself, while the lengths of $AB$ and $CD$ remain unchanged. The percent decrease in the area of the square is:",
+    "gt": "25"
+  },
+  {
+    "question": "Positive integers $a$ and $b$ are each less than $6$. What is the smallest possible value for $2 \\cdot a - a \\cdot b$?",
+    "gt": "-15"
+  },
+  {
+    "question": "In square $ABCD$, points $P$ and $Q$ lie on $\\overline{AD}$ and $\\overline{AB}$, respectively. Segments $\\overline{BP}$ and $\\overline{CQ}$ intersect at right angles at $R$, with $BR = 6$ and $PR = 7$. What is the area of the square?",
+    "gt": "117"
+  },
+  {
+    "question": "The equations of $L_1$ and $L_2$ are $y=mx$ and $y=nx$, respectively. Suppose $L_1$ makes twice as large of an angle with the horizontal (measured counterclockwise from the positive x-axis ) as does $L_2$, and that $L_1$ has 4 times the slope of $L_2$. If $L_1$ is not horizontal, then $mn$ is",
+    "gt": "2"
+  },
+  {
+    "question": "An amusement park has a collection of scale models, with a ratio of $1: 20$, of buildings and other sights from around the country. The height of the United States Capitol is $289$ feet. What is the height in feet of its duplicate to the nearest whole number?",
+    "gt": "14"
+  },
+  {
+    "question": "Sides $\\overline{AB}$ and $\\overline{AC}$ of equilateral triangle $ABC$ are tangent to a circle at points $B$ and $C$ respectively. What fraction of the area of $\\triangle ABC$ lies outside the circle?",
+    "gt": "\\frac{4}{3}-\\frac{4\\sqrt{3}\\pi}{27}"
+  },
+  {
+    "question": "Given $0 \\le x_0 < 1$, let\n\\[x_n = \\begin{cases} 2x_{n-1} & \\text{ if } 2x_{n-1} < 1 \\\\ 2x_{n-1} - 1 & \\text{ if } 2x_{n-1} \\ge 1 \\end{cases}\\]for all integers $n > 0$. For how many $x_0$ is it true that $x_0 = x_5$?",
+    "gt": "31"
+  },
+  {
+    "question": "Logan is constructing a scaled model of his town. The city's water tower stands 40 meters high, and the top portion is a sphere that holds 100,000 liters of water. Logan's miniature water tower holds 0.1 liters. How tall, in meters, should Logan make his tower?",
+    "gt": "0.4"
+  },
+  {
+    "question": "In $\\triangle PQR$, $PR=15$, $QR=20$, and $PQ=25$. Points $A$ and $B$ lie on $\\overline{PQ}$, points $C$ and $D$ lie on $\\overline{QR}$, and points $E$ and $F$ lie on $\\overline{PR}$, with $PA=QB=QC=RD=RE=PF=5$. Find the area of hexagon $ABCDEF$.",
+    "gt": "150"
+  },
+  {
+    "question": "Adams plans a profit of $10$ % on the selling price of an article and his expenses are $15$ % of sales. The rate of markup on an article that sells for $ $5.00$ is:",
+    "gt": "33\\frac {1}{3}\\%"
+  },
+  {
+    "question": "What is the tens digit of $7^{2011}$?",
+    "gt": "4"
+  },
+  {
+    "question": "For a set of four distinct lines in a plane, there are exactly $N$ distinct points that lie on two or more of the lines. What is the sum of all possible values of $N$?",
+    "gt": "19"
+  },
+  {
+    "question": "Let $f(t)=\\frac{t}{1-t}$, $t \\not= 1$.  If $y=f(x)$, then $x$ can be expressed as",
+    "gt": "-f(-y)"
+  },
+  {
+    "question": "For every dollar Ben spent on bagels, David spent $25$ cents less. Ben paid $\\$12.50$ more than David. How much did they spend in the bagel store together?",
+    "gt": "$87.50"
+  },
+  {
+    "question": "Lucky Larry's teacher asked him to substitute numbers for $a$, $b$, $c$, $d$, and $e$ in the expression $a-(b-(c-(d+e)))$ and evaluate the result. Larry ignored the parentheses but added and subtracted correctly and obtained the correct result by coincidence. The numbers Larry substituted for $a$, $b$, $c$, and $d$ were $1$, $2$, $3$, and $4$, respectively. What number did Larry substitute for $e$? ",
+    "gt": "3"
+  },
+  {
+    "question": "If $x \\geq 0$, then $\\sqrt{x\\sqrt{x\\sqrt{x}}} =$",
+    "gt": "$\\sqrt[8]{x^7}$"
+  },
+  {
+    "question": "The complex number $z$ satisfies $z + |z| = 2 + 8i$. What is $|z|^{2}$? Note: if $z = a + bi$, then $|z| = \\sqrt{a^{2} + b^{2}}$.",
+    "gt": "289"
+  },
+  {
+    "question": "There are $120$ seats in a row.  What is the fewest number of seats that must be occupied so the next person to be seated must sit next to someone?",
+    "gt": "40"
+  },
+  {
+    "question": "What is $10 \\cdot \\left(\\frac{1}{2} + \\frac{1}{5} + \\frac{1}{10}\\right)^{-1}$?",
+    "gt": "\\frac{25}{2}"
+  },
+  {
+    "question": "Jose is $4$ years younger than Zack. Zack is $3$ years older than Inez. Inez is $15$ years old. How old is Jose?",
+    "gt": "14"
+  },
+  {
+    "question": "The sum of all the roots of $4x^3-8x^2-63x-9=0$ is:",
+    "gt": "2"
+  },
+  {
+    "question": "Nonzero real numbers $x$, $y$, $a$, and $b$ satisfy $x < a$ and $y < b$. How many of the following inequalities must be true?\n$\\textbf{(I)}\\ x+y < a+b$\n$\\textbf{(II)}\\ x-y < a-b$\n$\\textbf{(III)}\\ xy < ab$\n$\\textbf{(IV)}\\ \\frac{x}{y} < \\frac{a}{b}$",
+    "gt": "1"
+  },
+  {
+    "question": "After finding the average of $35$ scores, a student carelessly included the average with the $35$ scores and found the average of these $36$ numbers. The ratio of the second average to the true average was",
+    "gt": "1:1"
+  },
+  {
+    "question": "A gallon of paint is used to paint a room. One third of the paint is used on the first day. On the second day, one third of the remaining paint is used. What fraction of the original amount of paint is available to use on the third day?",
+    "gt": "\\frac{4}{9}"
+  },
+  {
+    "question": "What is the value of the expression $\\sqrt{16\\sqrt{8\\sqrt{4}}}$?",
+    "gt": "8"
+  },
+  {
+    "question": "A jacket and a shirt originally sold for $80$ dollars and $40$ dollars, respectively. During a sale Chris bought the $80$ dollar jacket at a $40\\%$ discount and the $40$ dollar shirt at a $55\\%$ discount. The total amount saved was what percent of the total of the original prices?",
+    "gt": "45\\%"
+  },
+  {
+    "question": "Penniless Pete's piggy bank has no pennies in it, but it has 100 coins, all nickels, dimes, and quarters, whose total value is $8.35. It does not necessarily contain coins of all three types. What is the difference between the largest and smallest number of dimes that could be in the bank?",
+    "gt": "64"
+  },
+  {
+    "question": "Six distinct positive integers are randomly chosen between $1$ and $2006$, inclusive. What is the probability that some pair of these integers has a difference that is a multiple of $5$?",
+    "gt": "1"
+  },
+  {
+    "question": "Keiko walks once around a track at exactly the same constant speed every day. The sides of the track are straight, and the ends are semicircles. The track has a width of $6$ meters, and it takes her $36$ seconds longer to walk around the outside edge of the track than around the inside edge. What is Keiko's speed in meters per second?",
+    "gt": "\\frac{\\pi}{3}"
+  },
+  {
+    "question": "Semicircles $POQ$ and $ROS$ pass through the center $O$. What is the ratio of the combined areas of the two semicircles to the area of circle $O$?",
+    "gt": "\\frac{1}{2}"
+  },
+  {
+    "question": "An automobile travels $a/6$ feet in $r$ seconds. If this rate is maintained for $3$ minutes, how many yards does it travel in $3$ minutes?",
+    "gt": "\\frac{10a}{r}"
+  },
+  {
+    "question": "The ratio of the radii of two concentric circles is $1:3$. If $\\overline{AC}$ is a diameter of the larger circle, $\\overline{BC}$ is a chord of the larger circle that is tangent to the smaller circle, and $AB=12$, then the radius of the larger circle is",
+    "gt": "18"
+  },
+  {
+    "question": "For real numbers $a$ and $b$, define $a \\diamond b = \\sqrt{a^2 + b^2}$. What is the value of $(5 \\diamond 12) \\diamond ((-12) \\diamond (-5))$?",
+    "gt": "13\\sqrt{2}"
+  },
+  {
+    "question": "$\\sqrt{8}+\\sqrt{18}=$",
+    "gt": "$5\\sqrt{2}$"
+  },
+  {
+    "question": "What is the hundreds digit of $(20! - 15!)?$",
+    "gt": "0"
+  },
+  {
+    "question": "How many positive integer factors of $2020$ have more than $3$ factors?",
+    "gt": "7"
+  },
+  {
+    "question": "Every week Roger pays for a movie ticket and a soda out of his allowance. Last week, Roger's allowance was $A$ dollars. The cost of his movie ticket was $20\\%$ of the difference between $A$ and the cost of his soda, while the cost of his soda was $5\\%$ of the difference between $A$ and the cost of his movie ticket. To the nearest whole percent, what fraction of $A$ did Roger pay for his movie ticket and soda?",
+    "gt": "23\\%"
+  },
+  {
+    "question": "Before the district play, the Unicorns had won $45$% of their basketball games. During district play, they won six more games and lost two, to finish the season having won half their games. How many games did the Unicorns play in all?",
+    "gt": "48"
+  },
+  {
+    "question": "Oscar buys $13$ pencils and $3$ erasers for $1.00$. A pencil costs more than an eraser, and both items cost a whole number of cents. What is the total cost, in cents, of one pencil and one eraser?",
+    "gt": "10"
+  },
+  {
+    "question": "Points $B$ and $C$ lie on $\\overline{AD}$. The length of $\\overline{AB}$ is $4$ times the length of $\\overline{BD}$, and the length of $\\overline{AC}$ is $9$ times the length of $\\overline{CD}$. The length of $\\overline{BC}$ is what fraction of the length of $\\overline{AD}$?",
+    "gt": "\\frac{1}{10}"
+  },
+  {
+    "question": "A school has $100$ students and $5$ teachers. In the first period, each student is taking one class, and each teacher is teaching one class. The enrollments in the classes are $50, 20, 20, 5,$ and $5$. Let $t$ be the average value obtained if a teacher is picked at random and the number of students in their class is noted. Let $s$ be the average value obtained if a student was picked at random and the number of students in their class, including the student, is noted. What is $t-s$?",
+    "gt": "-13.5"
+  },
+  {
+    "question": "What is the greatest number of consecutive integers whose sum is $45?$",
+    "gt": "90"
+  },
+  {
+    "question": "What is the greatest possible sum of the digits in the base-seven representation of a positive integer less than $2019$?",
+    "gt": "22"
+  },
+  {
+    "question": "A pair of standard $6$-sided dice is rolled once. The sum of the numbers rolled determines the diameter of a circle. What is the probability that the numerical value of the area of the circle is less than the numerical value of the circle's circumference?",
+    "gt": "\\frac{1}{12}"
+  },
+  {
+    "question": "The measures of the interior angles of a convex polygon of $n$ sides are in arithmetic progression. If the common difference is $5^{\\circ}$ and the largest angle is $160^{\\circ}$, then $n$ equals:",
+    "gt": "16"
+  },
+  {
+    "question": "The fraction $\\frac{a^{-4}-b^{-4}}{a^{-2}-b^{-2}}$ is equal to:",
+    "gt": "a^{-2}+b^{-2}"
+  },
+  {
+    "question": "A triangle and a trapezoid are equal in area. They also have the same altitude. If the base of the triangle is 18 inches, the median of the trapezoid is:",
+    "gt": "9 \\text{ inches}"
+  },
+  {
+    "question": "A closed box with a square base is to be wrapped with a square sheet of wrapping paper. The box is centered on the wrapping paper with the vertices of the base lying on the midlines of the square sheet of paper, as shown in the figure on the left. The four corners of the wrapping paper are to be folded up over the sides and brought together to meet at the center of the top of the box, point $A$ in the figure on the right. The box has base length $w$ and height $h$. What is the area of the sheet of wrapping paper?\n[asy] size(270pt); defaultpen(fontsize(10pt)); filldraw(((3,3)--(-3,3)--(-3,-3)--(3,-3)--cycle),lightgrey); dot((-3,3)); label(\"$A$\",(-3,3),NW); draw((1,3)--(-3,-1),dashed+linewidth(.5)); draw((-1,3)--(3,-1),dashed+linewidth(.5)); draw((-1,-3)--(3,1),dashed+linewidth(.5)); draw((1,-3)--(-3,1),dashed+linewidth(.5)); draw((0,2)--(2,0)--(0,-2)--(-2,0)--cycle,linewidth(.5)); draw((0,3)--(0,-3),linetype(\"2.5 2.5\")+linewidth(.5)); draw((3,0)--(-3,0),linetype(\"2.5 2.5\")+linewidth(.5)); label('$w$',(-1,-1),SW); label('$w$',(1,-1),SE); draw((4.5,0)--(6.5,2)--(8.5,0)--(6.5,-2)--cycle); draw((4.5,0)--(8.5,0)); draw((6.5,2)--(6.5,-2)); label(\"$A$\",(6.5,0),NW); dot((6.5,0)); [/asy]",
+    "gt": "2(w+h)^2"
+  },
+  {
+    "question": "Of the following expressions the one equal to $\\frac{a^{-1}b^{-1}}{a^{-3} - b^{-3}}$ is:",
+    "gt": "\\frac{a^2b^2}{b^3 - a^3}"
+  },
+  {
+    "question": "What is the value of $\\frac{11! - 10!}{9!}$?",
+    "gt": "100"
+  },
+  {
+    "question": "Let $A, M$, and $C$ be digits with $(100A+10M+C)(A+M+C) = 2005$. What is $A$?",
+    "gt": "4"
+  },
+  {
+    "question": "Let $f$ be a function for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.",
+    "gt": "-1/9"
+  },
+  {
+    "question": "Frieda the frog begins a sequence of hops on a $3 \\times 3$ grid of squares, moving one square on each hop and choosing at random the direction of each hop-up, down, left, or right. She does not hop diagonally. When the direction of a hop would take Frieda off the grid, she \"wraps around\" and jumps to the opposite edge. For example if Frieda begins in the center square and makes two hops \"up\", the first hop would place her in the top row middle square, and the second hop would cause Frieda to jump to the opposite edge, landing in the bottom row middle square. Suppose Frieda starts from the center square, makes at most four hops at random, and stops hopping if she lands on a corner square. What is the probability that she reaches a corner square on one of the four hops?",
+    "gt": "\\frac{25}{32}"
+  },
+  {
+    "question": "If $f(a)=a-2$ and $F(a,b)=b^2+a$, then $F(3,f(4))$ is:",
+    "gt": "7"
+  },
+  {
+    "question": "$\\frac{2+4+6+\\cdots + 34}{3+6+9+\\cdots+51}=$",
+    "gt": "$\\frac{2}{3}$"
+  },
+  {
+    "question": "The number of digits in $4^{16}5^{25}$ (when written in the usual base $10$ form) is",
+    "gt": "28"
+  },
+  {
+    "question": "How many integers $n \\geq 2$ are there such that whenever $z_1, z_2, \\dots, z_n$ are complex numbers such that\n\\[|z_1| = |z_2| = \\dots = |z_n| = 1 \\text{    and    } z_1 + z_2 + \\dots + z_n = 0,\\]\nthen the numbers $z_1, z_2, \\dots, z_n$ are equally spaced on the unit circle in the complex plane?",
+    "gt": "2"
+  },
+  {
+    "question": "If $x$ cows give $x+1$ cans of milk in $x+2$ days, how many days will it take $x+3$ cows to give $x+5$ cans of milk?",
+    "gt": "\\frac{x(x+2)(x+5)}{(x+1)(x+3)}"
+  },
+  {
+    "question": "The set $\\{3,6,9,10\\}$ is augmented by a fifth element $n$, not equal to any of the other four. The median of the resulting set is equal to its mean. What is the sum of all possible values of $n$?",
+    "gt": "26"
+  },
+  {
+    "question": "A $6$-inch and $18$-inch diameter poles are placed together and bound together with wire.\nThe length of the shortest wire that will go around them is:",
+    "gt": "12\\sqrt{3}+14\\pi"
+  },
+  {
+    "question": "Odell and Kershaw run for $30$ minutes on a circular track. Odell runs clockwise at $250 m/min$ and uses the inner lane with a radius of $50$ meters. Kershaw runs counterclockwise at $300 m/min$ and uses the outer lane with a radius of $60$ meters, starting on the same radial line as Odell. How many times after the start do they pass each other?",
+    "gt": "47"
+  },
+  {
+    "question": "The 64 whole numbers from 1 through 64 are written, one per square, on a checkerboard (an 8 by 8 array of 64 squares).  The first 8 numbers are written in order across the first row, the next 8 across the second row, and so on.  After all 64 numbers are written, the sum of the numbers in the four corners will be",
+    "gt": "130"
+  },
+  {
+    "question": "Six rectangles each with a common base width of $2$ have lengths of $1, 4, 9, 16, 25$, and $36$. What is the sum of the areas of the six rectangles?",
+    "gt": "182"
+  },
+  {
+    "question": "650 students were surveyed about their pasta preferences. The choices were lasagna, manicotti, ravioli and spaghetti. The results of the survey are displayed in the bar graph. What is the ratio of the number of students who preferred spaghetti to the number of students who preferred manicotti?",
+    "gt": "\\frac{5}{2}"
+  },
+  {
+    "question": "In counting $n$ colored balls, some red and some black, it was found that $49$ of the first $50$ counted were red.\nThereafter, $7$ out of every $8$ counted were red. If, in all, $90$ % or more of the balls counted were red, the maximum value of $n$ is:",
+    "gt": "210"
+  },
+  {
+    "question": "The figure may be folded along the lines shown to form a number cube. Three number faces come together at each corner of the cube. What is the largest sum of three numbers whose faces come together at a corner?",
+    "gt": "14"
+  },
+  {
+    "question": "Many calculators have a reciprocal key $\\boxed{\\frac{1}{x}}$ that replaces the current number displayed with its reciprocal.  For example, if the display is $\\boxed{00004}$ and the $\\boxed{\\frac{1}{x}}$ key is depressed, then the display becomes $\\boxed{000.25}$.  If $\\boxed{00032}$ is currently displayed, what is the fewest number of times you must depress the $\\boxed{\\frac{1}{x}}$ key so the display again reads $\\boxed{00032}$?",
+    "gt": "2"
+  },
+  {
+    "question": "The digits 1, 2, 3, 4 and 9 are each used once to form the smallest possible even five-digit number. The digit in the tens place is",
+    "gt": "9"
+  },
+  {
+    "question": "In a magic triangle, each of the six whole numbers $10-15$ is placed in one of the circles so that the sum, $S$, of the three numbers on each side of the triangle is the same.  The largest possible value for $S$ is\n[asy] draw(circle((0,0),1)); draw(dir(60)--6*dir(60)); draw(circle(7*dir(60),1)); draw(8*dir(60)--13*dir(60)); draw(circle(14*dir(60),1)); draw((1,0)--(6,0)); draw(circle((7,0),1)); draw((8,0)--(13,0)); draw(circle((14,0),1)); draw(circle((10.5,6.0621778264910705273460621952706),1)); draw((13.5,0.86602540378443864676372317075294)--(11,5.1961524227066318805823390245176)); draw((10,6.9282032302755091741097853660235)--(7.5,11.258330249197702407928401219788)); [/asy]",
+    "gt": "39"
+  },
+  {
+    "question": "Supposed that $x$ and $y$ are nonzero real numbers such that $\\frac{3x+y}{x-3y}=-2$. What is the value of $\\frac{x+3y}{3x-y}$?",
+    "gt": "2"
+  },
+  {
+    "question": "The product $8 \\times .25 \\times 2 \\times .125 =$",
+    "gt": "$\\frac{1}{2}$"
+  },
+  {
+    "question": "In parallelogram $ABCD$, $\\overline{DE}$ is the altitude to the base $\\overline{AB}$ and $\\overline{DF}$ is the altitude to the base $\\overline{BC}$. [Note: Both pictures represent the same parallelogram.]  If $DC=12$, $EB=4$, and $DE=6$, then $DF=$",
+    "gt": "6.4"
+  },
+  {
+    "question": "Four congruent rectangles are placed as shown. The area of the outer square is $4$ times that of the inner square. What is the ratio of the length of the longer side of each rectangle to the length of its shorter side?\n\n[asy]\nunitsize(6mm);\ndefaultpen(linewidth(.8pt));\npath p=(1,1)--(-2,1)--(-2,2)--(1,2);\ndraw(p);\ndraw(rotate(90)*p);\ndraw(rotate(180)*p);\ndraw(rotate(270)*p);\n[/asy]",
+    "gt": "3"
+  },
+  {
+    "question": "Alice refuses to sit next to either Bob or Carla. Derek refuses to sit next to Eric. How many ways are there for the five of them to sit in a row of $5$ chairs under these conditions?",
+    "gt": "28"
+  },
+  {
+    "question": "If rectangle ABCD has area 72 square meters and E and G are the midpoints of sides AD and CD, respectively, then the area of rectangle DEFG in square meters is",
+    "gt": "18"
+  },
+  {
+    "question": "If $P_1P_2P_3P_4P_5P_6$ is a regular hexagon whose apothem (distance from the center to midpoint of a side) is $2$, and $Q_i$ is the midpoint of side $P_iP_{i+1}$ for $i=1,2,3,4$, then the area of quadrilateral $Q_1Q_2Q_3Q_4$ is",
+    "gt": "4\\sqrt{3}"
+  },
+  {
+    "question": "Alice, Bob, and Carol play a game in which each of them chooses a real number between 0 and 1. The winner of the game is the one whose number is between the numbers chosen by the other two players. Alice announces that she will choose her number uniformly at random from all the numbers between 0 and 1, and Bob announces that he will choose his number uniformly at random from all the numbers between $\\frac{1}{2}$ and $\\frac{2}{3}$. Armed with this information, what number should Carol choose to maximize her chance of winning?",
+    "gt": "\\frac{13}{24}"
+  },
+  {
+    "question": "The sum of the real values of $x$ satisfying the equality $|x+2|=2|x-2|$ is:",
+    "gt": "6\\frac{2}{3}"
+  },
+  {
+    "question": "Let $ABCD$ be an isosceles trapezoid with $\\overline{BC} \\parallel \\overline{AD}$ and $AB=CD$. Points $X$ and $Y$ lie on diagonal $\\overline{AC}$ with $X$ between $A$ and $Y$. Suppose $\\angle AXD = \\angle BYC = 90^\\circ$, $AX = 3$, $XY = 1$, and $YC = 2$. What is the area of $ABCD?$",
+    "gt": "$3\\sqrt{35}$"
+  },
+  {
+    "question": "A cylindrical tank with radius $4$ feet and height $9$ feet is lying on its side. The tank is filled with water to a depth of $2$ feet. What is the volume of water, in cubic feet?",
+    "gt": "$48\\pi - 36 \\sqrt {3}$"
+  },
+  {
+    "question": "The number of revolutions of a wheel, with fixed center and with an outside diameter of $6$ feet, required to cause a point on the rim to go one mile is:",
+    "gt": "\\frac{880}{\\pi}"
+  },
+  {
+    "question": "$\\frac{(.2)^3}{(.02)^2} =$",
+    "gt": "20"
+  },
+  {
+    "question": "Each vertex of a cube is to be labeled with an integer 1 through 8, with each integer being used once, in such a way that the sum of the four numbers on the vertices of a face is the same for each face. Arrangements that can be obtained from each other through rotations of the cube are considered to be the same. How many different arrangements are possible?",
+    "gt": "6"
+  },
+  {
+    "question": "A lattice point in an $xy$-coordinate system is any point $(x, y)$ where both $x$ and $y$ are integers. The graph of $y = mx +2$ passes through no lattice point with $0 < x \\le 100$ for all $m$ such that $\\frac{1}{2} < m < a$. What is the maximum possible value of $a$?",
+    "gt": "\\frac{50}{99}"
+  },
+  {
+    "question": "Six ants simultaneously stand on the six vertices of a regular octahedron, with each ant at a different vertex. Simultaneously and independently, each ant moves from its vertex to one of the four adjacent vertices, each with equal probability. What is the probability that no two ants arrive at the same vertex?",
+    "gt": "\\frac{5}{256}"
+  },
+  {
+    "question": "Points $P$ and $Q$ are on line segment $AB$, and both points are on the same side of the midpoint of $AB$. Point $P$ divides $AB$ in the ratio $2:3$, and $Q$ divides $AB$ in the ratio $3:4$. If $PQ=2$, then the length of segment $AB$ is",
+    "gt": "70"
+  },
+  {
+    "question": "If $f(x)=\\frac{x^4+x^2}{x+1}$, then $f(i)$, where $i=\\sqrt{-1}$, is equal to",
+    "gt": "0"
+  },
+  {
+    "question": "Joy has $30$ thin rods, one each of every integer length from $1 \\text{ cm}$ through $30 \\text{ cm}$. She places the rods with lengths $3 \\text{ cm}$, $7 \\text{ cm}$, and $15 \\text{cm}$ on a table. She then wants to choose a fourth rod that she can put with these three to form a quadrilateral with positive area. How many of the remaining rods can she choose as the fourth rod?",
+    "gt": "17"
+  },
+  {
+    "question": "Malcolm wants to visit Isabella after school today and knows the street where she lives but doesn't know her house number. She tells him, \"My house number has two digits, and exactly three of the following four statements about it are true.\" \n(1) It is prime.\n(2) It is even.\n(3) It is divisible by 7.\n(4) One of its digits is 9.\nThis information allows Malcolm to determine Isabella's house number. What is its units digit?",
+    "gt": "8"
+  },
+  {
+    "question": "Samantha lives 2 blocks west and 1 block south of the southwest corner of City Park. Her school is 2 blocks east and 2 blocks north of the northeast corner of City Park. On school days she bikes on streets to the southwest corner of City Park, then takes a diagonal path through the park to the northeast corner, and then bikes on streets to school. If her route is as short as possible, how many different routes can she take?",
+    "gt": "18"
+  },
+  {
+    "question": "Alice needs to replace a light bulb located $10$ centimeters below the ceiling in her kitchen. The ceiling is $2.4$ meters above the floor. Alice is $1.5$ meters tall and can reach $46$ centimeters above the top of her head. Standing on a stool, she can just reach the light bulb. What is the height of the stool, in centimeters?",
+    "gt": "34"
+  },
+  {
+    "question": "The manager of a company planned to distribute a $50 bonus to each employee from the company fund, but the fund contained $5 less than what was needed.  Instead the manager gave each employee a $45 bonus and kept the remaining $95 in the company fund.  The amount of money in the company fund before any bonuses were paid was",
+    "gt": "995"
+  },
+  {
+    "question": "$6^6 + 6^6 + 6^6 + 6^6 + 6^6 + 6^6 = $",
+    "gt": "$6^7$"
+  },
+  {
+    "question": "Carl has 5 cubes each having side length 1, and Kate has 5 cubes each having side length 2. What is the total volume of these 10 cubes?",
+    "gt": "45"
+  },
+  {
+    "question": "Joe had walked half way from home to school when he realized he was late. He ran the rest of the way to school. He ran 3 times as fast as he walked. Joe took 6 minutes to walk half way to school. How many minutes did it take Joe to get from home to school?",
+    "gt": "8"
+  },
+  {
+    "question": "What is the value of $\\frac{(2112-2021)^2}{169}$?",
+    "gt": "49"
+  },
+  {
+    "question": "A game is played with tokens according to the following rule.  In each round, the player with the most tokens gives one token to each of the other players and also places one token in the discard pile.  The game ends when some player runs out of tokens.  Players $A$, $B$, and $C$ start with $15$, $14$, and $13$ tokens, respectively.  How many rounds will there be in the game?",
+    "gt": "37"
+  },
+  {
+    "question": "Circle $C_1$ has its center $O$ lying on circle $C_2$. The two circles meet at $X$ and $Y$. Point $Z$ in the exterior of $C_1$ lies on circle $C_2$ and $XZ=13$, $OZ=11$, and $YZ=7$. What is the radius of circle $C_1$?",
+    "gt": "\\sqrt{30}"
+  },
+  {
+    "question": "Rectangle $ABCD$ has $AB=4$ and $BC=3$. Segment $EF$ is constructed through $B$ so that $EF$ is perpendicular to $DB$, and $A$ and $C$ lie on $DE$ and $DF$, respectively. What is $EF$?",
+    "gt": "\\frac{125}{12}"
+  },
+  {
+    "question": "Consider the set of numbers $\\{1, 10, 10^2, 10^3, \\ldots, 10^{10}\\}$. The ratio of the largest element of the set to the sum of the other ten elements of the set is closest to which integer?",
+    "gt": "9"
+  },
+  {
+    "question": "The five tires of a car (four road tires and a full-sized spare) were rotated so that each tire was used the same number of miles during the first $30,000$ miles the car traveled.  For how many miles was each tire used?",
+    "gt": "24000"
+  },
+  {
+    "question": "In rectangle $ABCD$, $AB=6$ and $AD=8$. Point $M$ is the midpoint of $\\overline{AD}$. What is the area of $\\triangle AMC$?",
+    "gt": "12"
+  },
+  {
+    "question": "If $f(x)=3x+2$ for all real $x$, then the statement:\n\"$|f(x)+4|<a$ whenever $|x+2|<b$ and $a>0$ and $b>0$\"\nis true when",
+    "gt": "$b \\le a/3$"
+  },
+  {
+    "question": "If $a, b, c$ are positive integers less than $10$, then $(10a + b)(10a + c) = 100a(a + 1) + bc$ if:",
+    "gt": "$b+c=10$"
+  },
+  {
+    "question": "Points $A$ and $B$ are $5$ units apart. How many lines in a given plane containing $A$ and $B$ are $2$ units from $A$ and $3$ units from $B$?",
+    "gt": "3"
+  },
+  {
+    "question": "A bug crawls along a number line, starting at $-2$. It crawls to $-6$, then turns around and crawls to $5$. How many units does the bug crawl altogether?",
+    "gt": "15"
+  },
+  {
+    "question": "Arjun and Beth play a game in which they take turns removing one brick or two adjacent bricks from one \"wall\" among a set of several walls of bricks, with gaps possibly creating new walls. The walls are one brick tall. For example, a set of walls of sizes $4$ and $2$ can be changed into any of the following by one move: $(3,2),(2,1,2),(4),(4,1),(2,2),$ or $(1,1,2).$ \n\nArjun plays first, and the player who removes the last brick wins. For which starting configuration is there a strategy that guarantees a win for Beth?",
+    "gt": "$(6,2,1)$"
+  },
+  {
+    "question": "In a collection of red, blue, and green marbles, there are $25\\%$ more red marbles than blue marbles, and there are $60\\%$ more green marbles than red marbles. Suppose that there are $r$ red marbles. What is the total number of marbles in the collection?",
+    "gt": "3.4r"
+  },
+  {
+    "question": "If an integer of two digits is $k$ times the sum of its digits, the number formed by interchanging the digits is the sum of the digits multiplied by",
+    "gt": "11-k"
+  },
+  {
+    "question": "If $F(n+1)=\\frac{2F(n)+1}{2}$ for $n=1,2,\\cdots$ and $F(1)=2$, then $F(101)$ equals:",
+    "gt": "52"
+  }
+]
